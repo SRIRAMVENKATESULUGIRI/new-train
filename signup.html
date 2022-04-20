@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <label>Username : </label>    -->
+    <form action="" method="post" onsubmit="register()">
+            <input type="text" placeholder="Enter Username" id="username" name="username" required></br> 
+            <!-- <label>Password : </label>  -->
+            <input type="password" placeholder="Enter Password" id="password" name="password" required></br>
+            <input type="email" name="email" id="email">
+            <input type="submit" value="register">
+        </form>
+            <script>
+                function register()
+                {
+                    var user=document.querySelector("#username");
+                    var pass=document.querySelector("#passsword");
+                     localStorage.setItem("username",user);
+                     localStorage.setItem("password",pass);   
+                    if(localStorage!="undefined")
+                    {
+                        alert("register success");
+                        event.preventDefault();
+                    }
+                    else
+                    {
+                        alert("registration failed");
+                    }
+                }
+            </script>
+</body>
+</html>

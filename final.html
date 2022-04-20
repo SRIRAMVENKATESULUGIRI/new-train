@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RAILWAY RESERVATION SYSTEM</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    h1::before
+    {
+        content:'IRRS';
+        background-color: yellow;
+        padding:20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
+    
+    
+</style>
+</head>
+<body style="background-color:skyblue">
+<h1 style="text-align: center;">INDIAN RAILWAY RESERVATION SYSTEM <i class="fas fa-train" style="color:blue"></i></h1>
+
+<div style="border:2px solid black">
+<table border="3"; width=100%>
+<tr>
+<td><form action="home.html">
+<button type="submit" align="center">home</button>
+</td>
+</form>
+<td>
+<form action="meals.html">
+<button type="submit">meals</button>
+</form>
+</td>
+<td>
+<form action="holpack.html">
+<button type="submit">holiday packages</button>
+</form>
+</td>
+<td>
+<form action="services.html">
+<button type="submit">services at station</button>
+</form>
+</td>
+<td>
+<form action="contact.html">
+<button type="submit">contact us</button>
+</form>
+</td>
+</tr>
+<script>
+function val()
+{
+    var str1 = document.getElementById("t1");
+    var str2 = document.getElementById("t2");
+    var str3 = document.getElementById("t3");
+    var str4 = document.getElementById("t4");
+    if(str1.value=="-1")
+    {
+        alert("from");
+        return false;
+    }
+    else if(str2.value =="-1")
+    {
+        alert("to");
+        return false;
+    }
+    else if(str3.value.trim() =="")
+    {
+        alert("date of journey");
+        return false;
+    }
+    else if(str4.value =="-1")
+    {
+        alert("type of class");
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+    return true;
+}
+</script>
+</head>
+   <form onsubmit="return val()" action="group.html">
+    
+       <table cellspacing="15" cellpadding="25" border="2">
+          <caption><b>BOOK YOUR TICKETS HERE</b></caption>
+            <tr>
+            <td align="right">FROM</td>
+            <td>
+             <select name="FROM" id="t1">
+                 <option value="-1" selected>[Choose yours]</option>
+                  <option value="1">CHENNAI</option>
+                  <option value="2">NELLORE</option>
+                   <option value="3">ONGOLE</option>
+                   <option value="4">TENALI</option>
+                   <option value="5">VIJAYAWADA</option>
+                   <option value="6">GUNTUR</option>
+                   <option value="7">JALANDHAR</option>
+                   <option value="8">CHANDIGARH</option>
+                   <option value="9">DELHI</option>
+                    <option value="10">BOMBAY</option>
+                  </select>
+                </td>
+        </tr>
+        <tr>
+                <td align="right">TO</td>
+                <td>
+                 <select name="City" id="t2">
+                       <option value="-1" selected>[Choose yours]</option>
+                       <option value="1">AHMEDABAD</option>
+                       <option value="2">RAIPUR</option>
+                       <option value="3">CHENNAI</option>
+                       <option value="4">JABALPUR</option>
+                       <option value="5">JALANDHAR</option>
+                       <option value="6">SHRIDI</option>
+                       <option value="7">PHAGWARA</option>
+                       <option value="8">VIJAYAWADA</option>
+                       <option value="9">RAYAGADA</option>
+                       <option value="10">BANGLORE</option>
+                       <option value="11">GUNTUR</option>
+                       <option value="12">NELLORE</option>
+                       <option value="13">DELHI</option>
+                       <option value="14">BOMBAY</option>
+                       <option value="15">ONGOLE</option>
+                       <option value="16">TENALI</option>
+                    </select>
+                </td>
+        </tr>
+        <tr>
+                <td align="right">DATE OF JOURNEY</td>
+                <td><input type="text" name="DATE OF JOURNEY" id="t3"></td>
+        </tr>
+        <tr>
+                <td align="right">CLASS</td>
+                <td>
+                      <select name="CLASS" id="t4">
+                      <option value="-1" selected>[Choose yours]</option>
+                      <option value="1">SLEEPER</option>
+                      <option value="2">3 TIER</option>
+                      <option value="3">2 TIER</option>
+                      <option value="4">1 TIER</option>
+                      <option value="5">LADIES</option>
+                      <option value="6">SENIOR CITIZEN</option>
+                      <option value="7">ARMY</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+               <td align="right"></td>
+               <td><input type="submit" value="search" /></td>
+            </tr>
+    </form>
+       </table>
+       <div style="float:right; width: 50;">
+     <video width="600" height="350" controls>
+       <source src="train.mp4"
+     type="video/ogg">
+     </video>
+    </div>
+    </div>
+<div style="border:2px solid black">
+<h2 style="text-align: center;">HOLIDAYS</h2>
+<table border="3"; width=80%>
+<tr>
+<th>Tours and Travels</th>
+<th>International Packages</th>
+<th>National Packages</th>
+</tr>
+<tr>
+<td><p>*Southern travels<br>
+               *Kartar travels<br>
+               *Vrl travels<br>
+               *Kesaneni travels</p></td>
+<td><p>We have wide range of packages<br>
+                *singapore(5 days)<br>
+                *london(4 days)<br>
+                *united states( 10 days)<br>
+                *united kingdom<br></p></td>
+<td><p>We have wide range of packages<br>
+                *goa trip<br>
+                *jaipur trip<br>
+                *south indian trip<br>
+                *north indian trip<br></p></td>
+</tr>
+</div>
+</table>
+</body>
+</html>
